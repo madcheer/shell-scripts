@@ -1,1 +1,2 @@
-this is my first program
+#!/bin/bash
+echo "this is my first programm"
