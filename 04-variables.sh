@@ -1,5 +1,5 @@
 #!/bin/bash
 persion1=$x
 persion2=$y
-echo "$x: hello $y , how are you"
-echo "$y: hello $x, I am good"
+echo "$persion1: hello $persion2 , how are you"
+echo "$persion2: hello $persion1, I am good"
