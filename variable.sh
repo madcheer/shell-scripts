@@ -1,3 +1,5 @@
 #!/bin/bash
-echo "Ramesh: hello Suresh, how are you"
-echo "Suresh: hello Ramesh, I am good"
+a=Rameshb
+b=Suresh
+echo "$a: hello $b, how are you"
+echo "$b: hello $a, I am good"
