@@ -1,5 +1,5 @@
 #!/bin/bash
-DATE=(date)
+DATE=$(date)
 a=Rameshb
 b=Suresh
 echo "$a: hello $b, how are you"
