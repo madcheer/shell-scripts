@@ -3,5 +3,5 @@
 
 echo "enter USER NAME:"
 
-read USERNMAE
+read USERNAME
 echo "user name is : $USERNAME"
