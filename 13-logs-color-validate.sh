@@ -12,7 +12,7 @@ if [ $1 -ne 0 ]
          echo -e "$2..... is  $R FAILED"
          exit 1
    else
-          echo -e "$2..... is $G SUCCESSFUL"
+          echo -e "$2..... is $G SUCCESSFUL $N"
    fi 
 
 }
