@@ -24,10 +24,10 @@ yum install git -y
   
   if [ $? -ne 0 ]
    then
-         echo "installation of sql is  failed"
+         echo "installation of GIT is  failed"
          exit 1
    else
-          echo "installation of sql is successful"
+          echo "installation of GIT is successful"
    fi 
 
 
