@@ -23,7 +23,7 @@ ID=$(id -u)
 
 TIMESTAMP=$(date +%F-%H-%M-%s)
 
-echo "/tmp/$0-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 if [ $ID -ne 0 ]
    then
@@ -33,11 +33,11 @@ else
        echo " you are a root user to install the software"
 fi
 
-yum install mysql -y
+yum install mysql -y &>>LOGFILE
 
 VALIDATE $? $installing MYSQL
     
-yum install git -y
+yum install git -y &>>LOGFILE
 
 VALIDATE $? $installing GIT
 
