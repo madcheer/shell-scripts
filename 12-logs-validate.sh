@@ -21,7 +21,7 @@ ID=$(id -u)
 
 #to get script name with time as a log file
 
-TIMESTAMP=date +%F-%H-%M-%s
+TIMESTAMP=$(date +%F-%H-%M-%s)
 
 echo "/tmp/$0-$TIMESTAMP.log"
 
