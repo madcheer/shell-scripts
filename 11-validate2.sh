@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #passing arguments to VALIDATE FUNCTION TO KNOW WHAT IS INSTALLED?
-# passed argument $1 and $2
+# passed argument $1 and $2  $? --> prints command succeess  0  or failure 1
 
 VALIDATE()
 {
