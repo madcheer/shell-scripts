@@ -6,3 +6,4 @@ echo "you dont have permissions to install mysql as you are not root user"
 else
 echo "running as root user"
 fi
+yum install mysql -y
