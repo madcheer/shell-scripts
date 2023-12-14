@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 ID=$(id -u)
 if [ $ID -ne 0 ]
   then
@@ -10,6 +11,16 @@ if [ $ID -ne 0 ]
 fi
 
 yum install mysql -y
+
+if [ $? -ne 0 ]
+   then
+      echo "mysql installation got failed".
+   else
+    echo "mysql installtion got success"
+fi
+
+    
+
 
 
 
