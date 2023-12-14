@@ -9,10 +9,10 @@ VALIDATE()
 
 if [ $? -ne 0 ]
    then
-        echo -e "$1.... R got failed N"
+        echo -e "$1.... $R got failed $N"
         exit 1
     else
-         echo -e "$2.... G got succesful N"
+         echo -e "$2.... $G got succesful $N"
 fi
 
 }
