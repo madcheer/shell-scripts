@@ -5,10 +5,10 @@ VALIDATE()
 
 if [ $? -ne 0 ]
    then
-        echo "installation got failed"
+        echo "$1.... got failed"
         exit 1
     else
-         echo "installtion got succesful"
+         echo "$2.... got succesful"
 fi
 
 }
@@ -24,11 +24,11 @@ fi
 
 yum install mysql -y
 
-VALIDATE
+VALIDATE $?  $installtion of MYSQL
 
 yum install httpd -y
  
-VALIDATE
+VALIDATE $? $installtion of HTTPD
 
 
    
