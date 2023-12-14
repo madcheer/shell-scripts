@@ -5,10 +5,10 @@ VALIDATE()
 
 if [ $? -ne 0 ]
    then
-        echo "$1.... got failed"
+        echo -e "$1.... \e[31m got failed \e[0m"
         exit 1
     else
-         echo "$2.... got succesful"
+         echo -e "$2.... \e[32m got succesful \e[0m"
 fi
 
 }
