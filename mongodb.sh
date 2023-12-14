@@ -2,13 +2,17 @@
 
 VALIDATE()
 {
+    R=(\e[31m)
+    G=(\e[32m)
+    Y=(\e[33m)
+    N=(\e[0m)
 
 if [ $? -ne 0 ]
    then
-        echo -e "$1.... \e[31m got failed \e[0m"
+        echo -e "$1.... $R got failed $N"
         exit 1
     else
-         echo -e "$2.... \e[32m got succesful \e[0m"
+         echo -e "$2.... $G got succesful $N"
 fi
 
 }
@@ -28,8 +32,6 @@ VALIDATE $?  "Installation of MYSQL"
 
 yum install httpd -y
  
-VALIDATE $? $HTTPD
-
 VALIDATE $?  "Installation of HTTPD"
 
 
