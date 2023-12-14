@@ -22,7 +22,7 @@ fi
 
 yum install httpd -y
  
-if [ $? ne 0 ]
+if [ $? -ne 0 ]
    then
         echo "httpd installation got failed"
         exit 1
