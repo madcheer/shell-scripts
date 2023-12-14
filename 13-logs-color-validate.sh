@@ -19,14 +19,12 @@ if [ $1 -ne 0 ]
 
 ID=$(id -u)
 
-#to get script name with time as a log file
-
-TIMESTAMP=$(date +%F-%H-%M-%s)
-
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
+#to get script name with time as a log file
+TIMESTAMP=$(date +%F-%H-%M-%s)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 if [ $ID -ne 0 ]
