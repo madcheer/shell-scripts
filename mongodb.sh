@@ -15,9 +15,24 @@ yum install mysql -y
 if [ $? -ne 0 ]
    then
       echo "mysql installation got failed".
+      exit 1
    else
-    echo "mysql installtion got success"
+    echo "mysql installtion got successful"
 fi
+
+yum install httpd -y
+ 
+if [ $? ne 0 ]
+   then
+        echo "httpd installation got failed"
+        exit 1
+    else
+         echo "httpd installtuon got succesful"
+fi
+
+
+   
+
 
     
 
