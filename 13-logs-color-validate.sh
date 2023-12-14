@@ -9,7 +9,7 @@ VALIDATE()
 
 if [ $1 -ne 0 ]
    then
-         echo -e "$2..... is  $R FAILED"
+         echo -e "$2..... is  $R FAILED $N"
          exit 1
    else
           echo -e "$2..... is $G SUCCESSFUL $N"

@@ -39,6 +39,6 @@ for package in $@
             yum install $package -y &>>$LOGFILE
             VALIDATE $? "Installation of $package"
         else
-            echo "$package is already installed... $Y SKIPPINNG"
+            echo "$package is already installed... $Y SKIPPINNG $N"
         fi
    done
