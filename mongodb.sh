@@ -5,6 +5,10 @@
     Y="\e[33m"
     N="\e[0m"
 
+    TIMESTAMP=$(date +%F-%H-%M-%S)
+
+    LOGFILE="/tmp/$0-$TIMESTAMP.log"
+
 ID=$(id -u)
 if [ $ID -ne 0 ]
   then
@@ -29,11 +33,11 @@ fi
 
 yum install mysql -y  
 
-VALIDATE $?  "Installation of MYSQL" 
+VALIDATE $?  "Installation of MYSQL" &>>&LOGFILE
 
 yum install httpd -y
  
-VALIDATE $?  "Installation of HTTPD" 
+VALIDATE $?  "Installation of HTTPD" &>>&LOGFILE
 
 
    
