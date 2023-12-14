@@ -1,5 +1,17 @@
 #!/bin/bash
 
+VALIDATE()
+{
+
+if [ $? -ne 0 ]
+   then
+        echo "installation got failed"
+        exit 1
+    else
+         echo "installtion got succesful"
+fi
+
+}
 
 ID=$(id -u)
 if [ $ID -ne 0 ]
@@ -12,23 +24,11 @@ fi
 
 yum install mysql -y
 
-if [ $? -ne 0 ]
-   then
-      echo "mysql installtion got failed".
-      exit 1
-   else
-    echo "mysql installtion got successful"
-fi
+VALIDATE
 
 yum install httpd -y
  
-if [ $? -ne 0 ]
-   then
-        echo "httpd installation got failed"
-        exit 1
-    else
-         echo "httpd installtion got succesful"
-fi
+VALIDATE
 
 
    
