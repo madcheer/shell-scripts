@@ -27,13 +27,13 @@ fi
 
 }
 
-yum install mysql -y &>> 
+yum install mysql -y  
 
-VALIDATE $?  "Installation of MYSQL" &>>$LOGFILE
+VALIDATE $?  "Installation of MYSQL" 
 
 yum install httpd -y
  
-VALIDATE $?  "Installation of HTTPD" &>>$LOGFILE
+VALIDATE $?  "Installation of HTTPD" 
 
 
    
