@@ -24,11 +24,13 @@ fi
 
 yum install mysql -y
 
-VALIDATE $?  $MYSQL
+VALIDATE $?  "Installation of MYSQL"
 
 yum install httpd -y
  
 VALIDATE $? $HTTPD
+
+VALIDATE $?  "Installation of HTTPD"
 
 
    
