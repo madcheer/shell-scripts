@@ -13,7 +13,7 @@ fi
 
 FILES_TO_DELETE=$(find /tmp/shellscripts-logs -type f -mtime +14 -name "*.log")
 
-while IFS=read -r line
+while IFS= read -r line
     do
        echo "deleting files $line"
        rm -rf $line
