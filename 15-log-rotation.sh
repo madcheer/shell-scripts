@@ -6,7 +6,7 @@ N="\e[0m"
 
 SOURCE_DIR="/tmp/shellscripts-logs"
 
-if [ ! d $SOURCE_DIR]
+if [ ! d $SOURCE_DIR ]
    then
       echo -e "$R Souce directory does not exist"
       exit 1
