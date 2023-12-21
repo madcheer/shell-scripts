@@ -9,7 +9,6 @@ SOURCE_DIR="/tmp/shellscripts-logs"
 if [ ! d $SOURCE_DIR ]
    then
       echo -e "$R Souce directory does not exist"
-      exit 1
 fi
 
 FILES_TO_DELETE=$(find /tmp/shellscripts-logs -type f -mtime +14 -name "*.log")
